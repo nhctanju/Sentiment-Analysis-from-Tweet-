@@ -1,89 +1,135 @@
-# Sentiment-Analysis-from-Tweet-
-Sentiment classification from tweets using classic ML as well as Deep Learning models.
-📌 Project Overview
+# A Comparative Sentiment Analysis on Tweets Using Simple and Complex Models
 
-This project focuses on Sentiment Analysis of Twitter data, where tweets are classified into sentiment categories (Positive, Negative, Neutral) using both Classical Machine Learning algorithms and Deep Learning models.
+## 📘 Overview
 
-The main goal of this project is to compare traditional ML approaches with advanced deep learning architectures for text classification tasks.
+This project presents a comparative study of **sentiment and emotion classification** on Twitter data using both **traditional machine learning models** and **deep learning architectures**. The primary objective of the study is to evaluate how different models perform on **noisy, short, and informal social media text**, and to determine whether more complex, context-aware models provide better classification results.
 
-🚀 Models Implemented
-🔹 Classical Machine Learning Models
+This was group based project as a part Machine Learning (CSE427) course. It includes a **detailed academic report** and presentation video uploaded on YouTube.
 
-Naive Bayes
+---
 
-Random Forest
+## 🎯 Objectives
 
-K-Nearest Neighbors (KNN)
+The main goals of this project were:
 
-🔹 Deep Learning Models
+- To perform sentiment and emotion classification on Twitter data  
+- To compare the performance of traditional machine learning models and deep learning models  
+- To analyze the impact of contextual and sequential learning in sentiment analysis  
+- To identify which models are better suited for noisy, real-world social media text  
 
-Recurrent Neural Network (RNN)
+---
 
-Bidirectional RNN (BiRNN)
+## 🗂️ Dataset
 
-Long Short-Term Memory (LSTM)
+- Source: [Publicly available **Kaggle Twitter Sentiment Dataset**](https://www.kaggle.com/datasets/ankitkumar2635/sentiment-and-emotions-of-tweets)  
+- Content: Tweets annotated with  
+  - Sentiment polarity  
+  - Emotion categories (e.g., joy, anger, fear, trust)  
+- Nature of data:
+  - Short text length  
+  - Informal language  
+  - Slang, abbreviations, and hashtags  
 
+---
+## 🔄 Project Workflow
 
-📂 Dataset
+- Data Collection
+- Data Cleaning & Preprocessing
+- Exploratory Data Analysis (EDA)
+- Feature Engineering
+- Word Embeddings (for Deep Learning models)
+- Model Training
+- Model Evaluation
+- Performance Comparison
 
-The dataset consists of tweets labeled with sentiment classes.
+---
 
-Preprocessing steps include:
+## 🧠 Models Implemented
 
-Removal of URLs, mentions, hashtags, and redundant columns/features
+A variety of models were used to compare performance across different complexity levels.
 
+### 🔹 Traditional Machine Learning Models
+- Random Forest  
+- K-Nearest Neighbors (KNN)  
+- Naive Bayes  
 
-Stopword removal
+### 🔹 Deep Learning Models
+- Simple Recurrent Neural Network (RNN)  
+- Bidirectional RNN  
+- Long Short-Term Memory (LSTM)  
 
-Tokenization
+---
 
-Lemmatization
+## 📊 Results Summary
 
-Padding sequences (for deep learning models)
+The experimental results show that **deep learning models outperform traditional machine learning approaches** for sentiment classification on Twitter data.
 
-🛠️ Tech Stack
+| Model | Accuracy |
+|------|---------|
+| LSTM | **0.7501** |
+| Simple RNN | 0.7331 |
+| Random Forest | 0.7263 |
+| Bidirectional RNN | 0.7201 |
+| Naive Bayes | 0.6552 |
+| KNN | 0.6600 |
 
-Python
+### 🔍 Key Observations
 
-NumPy
+- **LSTM achieved the highest accuracy**, indicating strong performance in capturing contextual dependencies.  
+- Sequential neural models (RNN, LSTM) performed better than feature-based classifiers.  
+- Traditional models struggled with:
+  - Informal language  
+  - Slang and abbreviations  
+  - Emotionally expressive text  
 
-Pandas
+These findings support existing research that **context-aware and embedding-based models** are more effective for social media sentiment analysis.
 
-Scikit-learn
+---
 
-TensorFlow 
-Matplotlib 
-Seaborn
+## 📄 Project Report
 
-🔄 Project Workflow
+- A detailed academic report is included in this repository, containing:
+- Full methodology
+- Model architectures
+- Graph and Visuals
+- Detailed results and analysis
+- References and related work
 
-Data Collection
+📌 For complete technical details, please refer to the project report.
 
-Data Cleaning & Preprocessing
+---
+## 🎥 Presentation Video (YouTube): 
 
-Exploratory Data Analysis (EDA)
+A presentation video explaining the project, methodology, and results. Watch the full explanation here:
 
-TF-IDF
+🔗 [Project **Presentaion** Link](https://youtu.be/jEckM4sI6Rs?si=WGAzgf7gA3qfgmlU)
 
-Feature Engineering
+---
 
-Word Embeddings (for Deep Learning models)
+## 🛠️ Technologies Used
 
-Model Training
+- Python 🐍
+- Scikit-learn
+- TensorFlow / Keras
+- NumPy
+- Pandas
+- Matplotlib
+- Jupyter Notebook 📓
 
-Model Evaluation
+---
+## 🎓 Key Learning Outcomes
 
-Performance Comparison
+Through this project, we:
 
-📊 Evaluation Metrics
+- Compared simple and complex models for sentiment analysis
+- Observed the impact of sequential learning on text classification
+- Understood the challenges of noisy social media data
+- Demonstrated the effectiveness of deep learning models for emotion detection
+---
+## 👥 Project Team
 
-Accuracy
+This was a group project consisting of three members:
+- Niamul
+- Enayet
+- Shifat Sharif
 
-
-📈 Results
-
-Classical ML models performed well on smaller feature sets.
-
-Deep Learning models (especially BiLSTM) captured contextual information better and showed improved performance on complex sentence structures.
-
-Bidirectional architectures generally outperformed unidirectional models.
