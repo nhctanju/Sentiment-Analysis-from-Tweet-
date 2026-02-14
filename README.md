@@ -30,7 +30,7 @@ The dataset consists of tweets labeled with sentiment classes.
 
 Preprocessing steps include:
 
-Removal of URLs, mentions, hashtags
+Removal of URLs, mentions, hashtags, and redundant columns/features
 
 
 Stopword removal
