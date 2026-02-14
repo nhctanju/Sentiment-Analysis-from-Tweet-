@@ -129,7 +129,7 @@ Through this project, we:
 ## 👥 Project Team
 
 This was a group project consisting of three members:
-- Niamul
-- Enayet
+- [Niamul Hasan](https://github.com/nhctanju)
+- [Enayet Ali](https://github.com/Enayet24)
 - Shifat Sharif
 
